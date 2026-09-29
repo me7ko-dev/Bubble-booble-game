@@ -5,17 +5,21 @@
 
 ## Адреси
 
-- **GitHub (частно репо):** https://github.com/me7ko-dev/Bubble-booble-game
+- **Играй онлайн (и на телефон):** https://me7ko-dev.github.io/Bubble-booble-game/
+- **GitHub:** https://github.com/me7ko-dev/Bubble-booble-game
 - **Папка на компютъра:** `C:\Users\roika\Projects\bubble-booble-game`
 
 ## Как се пуска
+
+Най-лесно: отвори https://me7ko-dev.github.io/Bubble-booble-game/ в браузъра (компютър или телефон).
+
+Без интернет, от компютъра:
 
 1. Отвори папката `C:\Users\roika\Projects\bubble-booble-game`.
 2. Двоен клик на **`Играй.cmd`** – играта се отваря в браузъра на http://localhost:8940/
 3. Когато свършиш, затвори черния прозорец.
 
 Или ръчно: `node tools/serve.mjs` → http://localhost:8940/ (трябва ти Node.js).
-Репото е частно, затова GitHub Pages не работи (безплатният GitHub не пуска Pages от частни репота).
 
 ## Управление
 
