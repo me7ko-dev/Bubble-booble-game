@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+body { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+#wrap { width: 100%; display: flex; justify-content: center; }
+#screen {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #000;
+}
+#pad { display: none; }
+body.touch { justify-content: flex-start; padding-top: env(safe-area-inset-top); }
+body.touch #pad {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px calc(12px + env(safe-area-inset-bottom));
+  gap: 8px;
+}
+#pad .grp { display: flex; gap: 10px; }
+#pad .grp.small { flex-direction: column; gap: 6px; }
+#pad button {
+  font: bold 16px system-ui, sans-serif;
+  color: #fff;
+  background: #222;
+  border: 2px solid #555;
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  touch-action: none;
+}
+#pad .small button { width: 40px; height: 40px; font-size: 16px; border-radius: 10px; }
+#pad button.jump { background: #1d4f1d; border-color: #40e040; font-size: 13px; }
+#pad button.fire { background: #1d3a5f; border-color: #40a0ff; font-size: 13px; }
+#pad button.on { filter: brightness(1.8); transform: scale(0.95); }
+@media (orientation: landscape) and (max-height: 500px) {
+  body.touch { flex-direction: row; justify-content: center; }
+  body.touch #pad { position: fixed; inset: auto 0 0 0; max-width: none; background: transparent; pointer-events: none; }
+  body.touch #pad button { pointer-events: auto; opacity: 0.55; }
+}

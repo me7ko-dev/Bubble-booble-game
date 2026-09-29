@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Балончетата</title>
+<meta name="description" content="Аркадна игра с две дракончета, 100 рунда и много балончета.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="screen" aria-label="Балончетата – игра"></canvas>
+</div>
+<div id="pad" aria-hidden="true">
+  <div class="grp">
+    <button data-k="left">◀</button>
+    <button data-k="right">▶</button>
+  </div>
+  <div class="grp small">
+    <button id="btn-pause">⏸</button>
+    <button id="btn-mute">🔊</button>
+  </div>
+  <div class="grp">
+    <button data-k="jump" class="jump">СКОК</button>
+    <button data-k="fire" class="fire">БАЛОН</button>
+  </div>
+</div>
+<noscript>Играта изисква JavaScript.</noscript>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
