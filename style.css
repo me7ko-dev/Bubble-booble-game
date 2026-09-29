@@ -49,4 +49,6 @@ body.touch #pad {
   body.touch { flex-direction: row; justify-content: center; }
   body.touch #pad { position: fixed; inset: auto 0 0 0; max-width: none; background: transparent; pointer-events: none; }
   body.touch #pad button { pointer-events: auto; opacity: 0.55; }
+  /* пауза и звук горе вляво, в черното поле – иначе закриват дъното на нивото */
+  body.touch #pad .grp.small { position: fixed; top: calc(8px + env(safe-area-inset-top)); left: calc(8px + env(safe-area-inset-left)); flex-direction: row; }
 }
