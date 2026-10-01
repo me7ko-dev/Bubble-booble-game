@@ -7,7 +7,6 @@
 
 - **Играй онлайн (и на телефон):** https://me7ko-dev.github.io/Bubble-booble-game/
 - **GitHub:** https://github.com/me7ko-dev/Bubble-booble-game
-- **Папка на компютъра:** `C:\Users\roika\Projects\bubble-booble-game`
 
 ## Как се пуска
 
@@ -15,7 +14,7 @@
 
 Без интернет, от компютъра:
 
-1. Отвори папката `C:\Users\roika\Projects\bubble-booble-game`.
+1. Отвори папката на играта.
 2. Двоен клик на **`Играй.cmd`** – играта се отваря в браузъра на http://localhost:8940/
 3. Когато свършиш, затвори черния прозорец.
 
